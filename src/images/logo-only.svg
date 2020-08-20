@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect x="879.894" y="5670.114" transform="matrix(0.442566, 0.896736, -0.945282, 0.3442, 5091.519043, -2586.887939)" fill="#070808" width="186.078" height="22.319" style=""/>
+  <rect x="1051.668" y="5670.114" transform="matrix(-0.442566, 0.896736, -0.945282, -0.3442, 6223.50293, 1169.976196)" fill="#6D6F70" width="186.07" height="22.319" style=""/>
+  <ellipse fill="#791215" cx="84.948" cy="96.324" rx="81.626" ry="94.71" style=""/>
+  <rect x="157.982" y="77.045" fill="#791215" width="210.998" height="19.683" style=""/>
+  <ellipse fill="#6D6F70" cx="413.376" cy="96.324" rx="81.632" ry="94.71" style=""/>
+  <ellipse fill="#070808" cx="249.163" cy="363.654" rx="81.632" ry="94.733" style=""/>
+</svg>
