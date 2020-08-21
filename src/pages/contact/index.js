@@ -1,10 +1,10 @@
 import React from 'react';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
-import Call2 from '../../components/Call2';
+import Call from '../../components/Call';
 
 const Contact = () => (
-  <Layout bodyClass="page-contact">
+  <Layout bodyclassName="page-contact">
     <SEO title="Contact" />
     <div className="intro intro-small">
       <div className="container">
@@ -19,14 +19,14 @@ const Contact = () => (
     <div className="container">
       <div className="row">
         <div className="contact-form-card col-md-5">
-          <Call2
+          <Call
             name="Larry Litman"
             phone="602 - 300 - 8519"
             email="Llitman@healthcaresystemsandservices.com"
           />
         </div>
         <div className="contact-form-card col-md-5">
-          <Call2
+          <Call
             className="contact-form-card"
             name="Tyler Litman"
             phone="602 - 391 - 9071"
@@ -35,55 +35,38 @@ const Contact = () => (
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-8">
-          <h4 className="mt-4">Business Hours</h4>
-          <table className="table table-sm opening-hours-table">
-            <tbody>
-              <tr>
-                <td className="day font-weight-bold">Monday</td>
-                <td className="opens">8:00am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Tuesday</td>
-                <td className="opens">8:00am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Wednesday</td>
-                <td className="opens">8:00am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Thursday</td>
-                <td className="opens">8:00am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Friday</td>
-                <td className="opens">8:00am</td>
-                <td>-</td>
-                <td className="closes">5:00pm</td>
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Saturday</td>
-                <td className="opens">Changing</td>
-                <td />
-                <td className="closes" />
-              </tr>
-              <tr>
-                <td className="day font-weight-bold">Sunday</td>
-                <td className="opens">Changing</td>
-                <td />
-                <td className="closes" />
-              </tr>
-            </tbody>
-          </table>
+      <div className="row top-spacer-25">
+        <div className="call col-8">
+          <form className="email-form">
+            <div className="form-group">
+              <label for="exampleInputEmail1">Email: </label>
+              <input
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div className="form-group">
+              <label for="exampleInputPassword1">Name: </label>
+              <input
+                type="test"
+                className="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message: </label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              />
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </div>
