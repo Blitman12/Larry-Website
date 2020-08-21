@@ -23,7 +23,6 @@ const Contact = () => (
             name="Larry Litman"
             phone="602 - 300 - 8519"
             email="Llitman@healthcaresystemsandservices.com"
-            button
           />
         </div>
         <div className="contact-form-card col-md-5">
@@ -32,7 +31,6 @@ const Contact = () => (
             name="Tyler Litman"
             phone="602 - 391 - 9071"
             email="Tlitman@healthcaresystemsandservices.com"
-            button
           />
         </div>
       </div>
