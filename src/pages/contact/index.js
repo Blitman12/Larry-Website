@@ -4,7 +4,7 @@ import Layout from '../../layouts/index';
 import Call from '../../components/Call';
 
 const Contact = () => (
-  <Layout bodyclassName="page-contact">
+  <Layout bodyClass="page-contact">
     <SEO title="Contact" />
     <div className="intro intro-small">
       <div className="container">
