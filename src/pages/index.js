@@ -3,9 +3,9 @@ import { graphql, withPrefix, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
-import Call2 from '../components/Call2';
+import Call from '../components/Call';
 
-const Home = (props) => {
+const Home = props => {
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
   return (
@@ -20,18 +20,26 @@ const Home = (props) => {
       <div className="intro pb-4">
         <div className="container">
           <h1>Healthcare Systems and Services</h1>
-          <p>
-            Solutions for a changing market.
-          </p>
+          <p>Solutions for a changing market.</p>
         </div>
       </div>
 
       <div className="container pt-2">
-        <Call2 name="Larry Litman" phone="602 - 300 - 8519" email="Llitman@healthcaresystemsandservices.com" button />
+        <Call
+          name="Larry Litman"
+          phone="602 - 300 - 8519"
+          email="Llitman@healthcaresystemsandservices.com"
+          button
+        />
       </div>
 
       <div className="container pt-2">
-        <Call2 name="Tyler Litman" phone="602 - 391 - 9071" email="Tlitman@healthcaresystemsandservices.com" button />
+        <Call
+          name="Tyler Litman"
+          phone="602 - 391 - 9071"
+          email="Tlitman@healthcaresystemsandservices.com"
+          button
+        />
       </div>
 
       <div className="container pt-8 pt-md-10">
@@ -40,11 +48,16 @@ const Home = (props) => {
             <h2 className="title-3 text-dark mb-3">Our Services</h2>
           </div>
           {markdown.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+            <div
+              key={edge.node.frontmatter.path}
+              className="col-12 col-md-4 mb-1"
+            >
               <div className="card service service-teaser">
                 <div className="card-content">
                   <h2>
-                    <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
+                    <Link to={edge.node.frontmatter.path}>
+                      {edge.node.frontmatter.title}
+                    </Link>
                   </h2>
                   <p>{edge.node.excerpt}</p>
                 </div>
@@ -52,33 +65,16 @@ const Home = (props) => {
             </div>
           ))}
           <div className="col-12 text-center">
-            <Link className="button button-primary mt-2" to="/services" style={{marginBottom: "100px" }}>
+            <Link
+              className="button button-primary mt-2"
+              to="/services"
+              style={{ marginBottom: '100px' }}
+            >
               View All Services
             </Link>
           </div>
         </div>
       </div>
-
-      {/* <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
-        <div className="row justify-content-center">
-          <div className="col-12">
-            <h2 className="title-3 text-dark mb-4">Our Features</h2>
-          </div>
-          {json.map(edge => (
-            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
-              <div className="feature">
-                {edge.node.image && (
-                  <div className="feature-image">
-                    <img src={withPrefix(edge.node.image)} />
-                  </div>
-                )}
-                <h2 className="feature-title">{edge.node.title}</h2>
-                <div className="feature-content">{edge.node.description}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div> */}
     </Layout>
   );
 };

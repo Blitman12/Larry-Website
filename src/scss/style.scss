@@ -13,8 +13,8 @@
 @import 'bootstrap/tables';
 // @import "bootstrap/images";
 // @import "bootstrap/code";
-// @import "bootstrap/forms";
-// @import "bootstrap/buttons";
+@import 'bootstrap/forms';
+@import 'bootstrap/buttons';
 // @import "bootstrap/transitions";
 // @import "bootstrap/dropdown";
 // @import "bootstrap/button-group";
@@ -92,11 +92,23 @@
 //   }
 // }
 
-
 // Website Styles - May use important to override css (not the best practice but whatevs)
 .contact-form-card {
   .call {
     display: inline-block;
     width: 100%;
   }
+}
+
+.email-form {
+  width: 100%;
+  padding: 25px;
+}
+
+.top-spacer-25 {
+  margin-top: 25px;
+}
+
+.bottom-buffer-50 {
+  padding-bottom: 50px;
 }
