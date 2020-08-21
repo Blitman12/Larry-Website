@@ -91,3 +91,12 @@
 //     }
 //   }
 // }
+
+
+// Website Styles - May use important to override css (not the best practice but whatevs)
+.contact-form-card {
+  .call {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -3,7 +3,7 @@ import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 import Call2 from '../../components/Call2';
 
-const Contact = props => (
+const Contact = () => (
   <Layout bodyClass="page-contact">
     <SEO title="Contact" />
     <div className="intro intro-small">
@@ -15,20 +15,29 @@ const Contact = props => (
         </div>
       </div>
     </div>
-    
 
     <div className="container">
       <div className="row">
-      <div className="col-md-5 pt-2">
-        <Call2 name="Larry Litman" phone="602 - 300 - 8519" email="Llitman@healthcaresystemsandservices.com" button />
+        <div className="contact-form-card col-md-5">
+          <Call2
+            name="Larry Litman"
+            phone="602 - 300 - 8519"
+            email="Llitman@healthcaresystemsandservices.com"
+            button
+          />
+        </div>
+        <div className="contact-form-card col-md-5">
+          <Call2
+            className="contact-form-card"
+            name="Tyler Litman"
+            phone="602 - 391 - 9071"
+            email="Tlitman@healthcaresystemsandservices.com"
+            button
+          />
+        </div>
       </div>
-        <div className="col-md-5 pt-2">
-        <Call2 name="Tyler Litman" phone="602 - 391 - 9071" email="Tlitman@healthcaresystemsandservices.com" button />
-      </div>
-  </div>
-  
 
-  <div className="row">
+      <div className="row">
         <div className="col-8">
           <h4 className="mt-4">Business Hours</h4>
           <table className="table table-sm opening-hours-table">
@@ -77,9 +86,9 @@ const Contact = props => (
               </tr>
             </tbody>
           </table>
-          </div>
         </div>
       </div>
+    </div>
   </Layout>
 );
 

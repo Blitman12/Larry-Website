@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Call2 (props) {
  return (
-      <div className="call" style={{display: 'inline-block', width: '100%'}}>
+      <div className="call">
     <div className="call-box-top">
     <div className="call-phone">
         <strong>Name: </strong>
