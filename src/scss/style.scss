@@ -130,3 +130,14 @@
 .space-around {
   justify-content: space-around;
 }
+
+.header-link {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  padding-left: 10px;
+  line-height: 36px;
+}
+
+.logo-header > a:hover {
+  text-decoration: none;
+}
