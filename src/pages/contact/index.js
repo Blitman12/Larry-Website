@@ -17,64 +17,72 @@ const Contact = () => (
     </div>
 
     <div className="container">
-      <div className="row">
-        <div className="contact-form-card col-md-5">
-          <Call
-            name="Larry Litman"
-            phone="602 - 300 - 8519"
-            email="Llitman@healthcaresystemsandservices.com"
-          />
+      <div className="row mobile-reverse space-around">
+        {/* Contact Form */}
+        <div className="col-lg-5 col-sm-12 mobile-spacer-25">
+          <div className="call fill-width">
+            <form
+              className="email-form"
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="form-group">
+                <label for="exampleInputEmail1">Email: </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="email"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label for="exampleInputPassword1">Name: </label>
+                <input
+                  type="test"
+                  className="form-control"
+                  id="exampleInputPassword1"
+                  name="name"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label for="exampleFormControlTextarea1">Message: </label>
+                <textarea
+                  className="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  name="message"
+                  required
+                />
+              </div>
+              <button type="submit" className="btn btn-primary">Submit</button>
+            </form>
+          </div>
         </div>
-        <div className="contact-form-card col-md-5">
-          <Call
-            className="contact-form-card"
-            name="Tyler Litman"
-            phone="602 - 391 - 9071"
-            email="Tlitman@healthcaresystemsandservices.com"
-          />
-        </div>
-      </div>
 
-      <div className="row top-spacer-25">
-        <div className="call col-8">
-          <form className="email-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
-            <div className="form-group">
-              <label for="exampleInputEmail1">Email: </label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                name="email"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label for="exampleInputPassword1">Name: </label>
-              <input
-                type="test"
-                className="form-control"
-                id="exampleInputPassword1"
-                name="name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Message: </label>
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                name="message"
-                required
-              />
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
-          </form>
+        {/* Contact cards */}
+        <div className="col-lg-5 col-12">
+          <div className="contact-form-card">
+            <Call
+              name="Larry Litman"
+              phone="602 - 300 - 8519"
+              email="Llitman@healthcaresystemsandservices.com"
+            />
+          </div>
+          <div className="contact-form-card">
+            <Call
+              className="contact-form-card"
+              name="Tyler Litman"
+              phone="602 - 391 - 9071"
+              email="Tlitman@healthcaresystemsandservices.com"
+            />
+          </div>
         </div>
       </div>
     </div>
