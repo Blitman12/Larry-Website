@@ -37,7 +37,9 @@ const Contact = () => (
 
       <div className="row top-spacer-25">
         <div className="call col-8">
-          <form className="email-form">
+          <form className="email-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
             <div className="form-group">
               <label for="exampleInputEmail1">Email: </label>
               <input
