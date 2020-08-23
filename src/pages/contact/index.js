@@ -47,6 +47,8 @@ const Contact = () => (
                 className="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                name="email"
+                required
               />
             </div>
             <div className="form-group">
@@ -55,6 +57,8 @@ const Contact = () => (
                 type="test"
                 className="form-control"
                 id="exampleInputPassword1"
+                name="name"
+                required
               />
             </div>
             <div class="form-group">
@@ -63,6 +67,8 @@ const Contact = () => (
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="3"
+                name="message"
+                required
               />
             </div>
             <button type="submit" className="btn btn-primary">
