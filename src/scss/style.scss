@@ -105,10 +105,28 @@
   padding: 25px;
 }
 
-.top-spacer-25 {
-  margin-top: 25px;
-}
-
 .bottom-buffer-50 {
   padding-bottom: 50px;
+}
+
+.mobile-spacer-25 {
+  margin-top: 25px;
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
+}
+
+.fill-width {
+  width: 100%;
+}
+
+.mobile-reverse {
+  flex-direction: column-reverse;
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
+.space-around {
+  justify-content: space-around;
 }
