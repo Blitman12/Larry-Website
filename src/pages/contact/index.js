@@ -75,7 +75,7 @@ const Contact = () => (
               email="Llitman@healthcaresystemsandservices.com"
             />
           </div>
-          <div className="contact-form-card">
+          <div className="contact-form-card"  style={{marginTop: '100px'}}>
             <Call
               className="contact-form-card"
               name="Tyler Litman"
