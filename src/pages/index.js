@@ -14,7 +14,7 @@ const Home = props => {
       <Helmet>
         <meta
           name="description"
-          content="Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme."
+          content="Solutions for a changing market. We provide a number of services including Federal/State cost report preparations, year-end audits, Medicare reimbursement rate schedules and more."
         />
       </Helmet>
       <div className="intro pb-4">
